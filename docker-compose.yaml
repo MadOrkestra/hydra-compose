@@ -5,10 +5,10 @@ services:
       - ./devnet:/devnet
     environment:
       - CARDANO_BLOCK_PRODUCER=true
-      - CARDANO_SOCKET_PATH=/devnet/node.socket # used by cardano-node
-      - CARDANO_NODE_SOCKET_PATH=/devnet/node.socket # used by cardano-cli
+      - CARDANO_SOCKET_PATH=/devnet/node.socket
+      - CARDANO_NODE_SOCKET_PATH=/devnet/node.socket
     ports:
-      - "3001:3001" # Port for HTTP transaction submission
+      - "3001:3001"
     command:
       [
         "run",
